@@ -168,6 +168,8 @@ base_url="https://power.larc.nasa.gov/api/temporal/daily/point?start=20240729&en
 
 API_URL = 'https://api.thingspeak.com/channels/2187169/feeds.json?api_key=LELEVX9B3SDHSFZ9&results=300'
 last_valid_data = None
+print("Current working directory:", os.getcwd())
+print("List of files in the directory:", os.listdir())
 with open('final_model_iguess.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
