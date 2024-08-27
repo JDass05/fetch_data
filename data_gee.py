@@ -11,13 +11,9 @@ from flask import request, send_file
 import json
 import datetime
 import os
-file_path = 'Finalmodel.pkl'
-
-if not os.path.exists(file_path):
-    print(f"Error: The file {file_path} does not exist.")
-else:
-    with open(file_path, 'rb') as model_file:
-        model = pickle.load(model_file)
+file_path = 'finalmodel.pkl'
+with open(file_path, 'rb') as model_file:
+    model = pickle.load(model_file)
 
 # Initialize Earth Engine
 service_account = 'sargun@sargun20.iam.gserviceaccount.com'
