@@ -175,6 +175,7 @@ if not os.path.exists(file_path):
     print(f"Error: The file {file_path} does not exist.")
 else:
     with open(file_path, 'rb') as model_file:
+        model = pickle.load(model_file)
 
 @app.route('/')
 def index():
