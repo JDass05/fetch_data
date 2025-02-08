@@ -8,6 +8,8 @@ import datetime
 import ee  # Google Earth Engine library
 from bson import json_util  # Import json_util for BSON handling
 from apscheduler.schedulers.background import BackgroundScheduler
+from dotenv import load_dotenv
+import os
 
 # Load your trained model
 file_path = 'Final_model_iguess.pkl'
@@ -24,7 +26,7 @@ if not uri:
 
 # Google Earth Engine (GEE) setup
 service_account = 'sargun@sargun20.iam.gserviceaccount.com'
-key_file = 'sargun20-af558cd29ee0.json'
+key_file = 'sargun20-e5f0e5945226.json'
 credentials = ee.ServiceAccountCredentials(service_account, key_file)
 ee.Initialize(credentials)
 sentinel2_collection = 'COPERNICUS/S2'
