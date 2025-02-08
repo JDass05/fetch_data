@@ -1,0 +1,7 @@
+{
+    "MONGO_URI": "mongodb+srv://sargun:ss12ss34ss56ss78ss90@cluster0.fmk5o.mongodb.net/NPKpredictions?retryWrites=true&w=majority",
+    "SERVICE_ACCOUNT": "sargun@sargun20.iam.gserviceaccount.com",
+    "KEY_FILE": "sargun20-af558cd29ee0.json",
+    "THINGSPEAK_API_KEY": "LELEVX9B3SDHSFZ9",
+    "NASA_API_URL": "https://power.larc.nasa.gov/api/temporal/daily/point?start=20240729&end=20240729&latitude=31.0741&longitude=76.0232&community=re&parameters=T2M%2CRH2M%2CPS&format=json&header=true&time-standard=lst"
+}

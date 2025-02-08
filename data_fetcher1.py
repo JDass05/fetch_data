@@ -14,7 +14,7 @@ def fetch_data1(base_url):
                  }
         
         return data_dict                       
-    
+
 
     else:
         raise Exception(f"Failed to retrieve data. Status code: {response.status_code}")
